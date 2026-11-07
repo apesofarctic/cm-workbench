@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Management Workbench</title>
+<style>
+:root{--bg:#f6f8fb;--fg:#202b3c;--mut:#536174;--card:#fff;--bd:#e5eaf1;--acc:#153f85}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11161f;--fg:#e8edf5;--mut:#9aa7ba;--card:#192231;--bd:#2a3648;--acc:#8ab4ff}}
+:root[data-theme="dark"]{--bg:#11161f;--fg:#e8edf5;--mut:#9aa7ba;--card:#192231;--bd:#2a3648;--acc:#8ab4ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;padding:48px 16px}
+.wrap{max-width:900px;margin:0 auto}
+h1{font-size:28px;margin:0 0 6px}
+p.sub{color:var(--mut);margin:0 0 36px}
+h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:32px 0 12px;font-weight:600}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+a.card{display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 18px;text-decoration:none;color:inherit}
+a.card:hover{border-color:var(--acc)}
+a.card b{font-weight:600}
+a.card span{color:var(--mut);font-size:13px;text-align:right}
+footer{color:var(--mut);font-size:13px;margin-top:40px;border-top:1px solid var(--bd);padding-top:16px}
+</style></head>
+<body><div class="wrap">
+<h1>Case Management Workbench</h1>
+<p class="sub">Clickable prototype. Screens are 1440 &times; 900. Start at the dashboard and follow the left rail, the tabs and the Call button.</p>
+
+<h2>Start here</h2>
+<ul>
+<li><a class="card" href="Main.dc.html"><b>Dashboard</b><span>Janet Morris &middot; Mon 11/09/2026 08:00</span></a></li>
+</ul>
+
+<h2>Member 360</h2>
+<ul>
+<li><a class="card" href="Member-Coverage.dc.html"><b>1 &middot; Member and coverage</b><span>Member 360</span></a></li>
+<li><a class="card" href="Member-Urgent.dc.html"><b>2 &middot; Urgent and history</b><span>Opens here when flagged</span></a></li>
+<li><a class="card" href="Member-Meds.dc.html"><b>3 &middot; Medications</b><span>Member 360</span></a></li>
+<li><a class="card" href="Member-Contact.dc.html"><b>4 &middot; Contact</b><span>Member 360</span></a></li>
+<li><a class="card" href="Member-CarePlan.dc.html"><b>5 &middot; Assessments and care plan</b><span>Member 360</span></a></li>
+</ul>
+
+<h2>Walkthrough: the five members</h2>
+<ul>
+<li><a class="card" href="Walk-Harold-Urgent.dc.html"><b>P1 Harold Venn</b><span>Urgent and history</span></a></li>
+<li><a class="card" href="Walk-Harold-Meds.dc.html"><b>P1 Harold Venn</b><span>Medications</span></a></li>
+<li><a class="card" href="Walk-Dana.dc.html"><b>P2 Dana Ruiz</b><span>Urgent and history</span></a></li>
+<li><a class="card" href="Walk-Walter.dc.html"><b>P3 Walter Okafor Sr.</b><span>Member and coverage</span></a></li>
+<li><a class="card" href="Walk-Marcus.dc.html"><b>P4 Marcus Hale</b><span>Contact</span></a></li>
+<li><a class="card" href="Walk-Lorraine.dc.html"><b>P5 Lorraine Pike</b><span>Urgent and history</span></a></li>
+</ul>
+
+<h2>Live call and supervisor</h2>
+<ul>
+<li><a class="card" href="Walk-Call.dc.html"><b>Call workspace</b><span>Harold and Ruth</span></a></li>
+<li><a class="card" href="Team.dc.html"><b>Team view</b><span>Derek Shaw, supervisor</span></a></li>
+</ul>
+
+<footer>Each screen is a single self-contained file. Nothing is loaded from outside this site.</footer>
+</div></body></html>
